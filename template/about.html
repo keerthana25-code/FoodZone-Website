@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="page-header mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>About Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Food Start -->
+<div class="food mt-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <div class="food-item">
+                    <i class="flaticon-burger"></i>
+                    <h2>Burgers</h2>
+                    <p style="text-align: justify;">
+                        Succulent beef patty embraced by melted cheese, nestled between soft buns, delivering a savory symphony in every bite a timeless culinary delight, the burger is a flavorful masterpiece adored by taste buds worldwide.
+                    </p>
+                    <a href="">View Menu</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="food-item">
+                    <i class="flaticon-snack"></i>
+                    <h2>Snacks</h2>
+                    <p style="text-align: justify;">
+                        Crunchy, crispy, and oh-so-satisfying, snacks offer a quick indulgence, tantalizing taste buds with a myriad of flavors and textures. From savory to sweet, they're the perfect pick-me-up, bringing joy in every bite, whether enjoyed solo or shared with friends.
+                    </p>
+                    <a href="">View Menu</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="food-item">
+                    <i class="flaticon-cocktail"></i>
+                    <h2>Beverages</h2>
+                    <p style="text-align: justify;">
+                        From steaming cups of rich coffee to chilled glasses of refreshing lemonade, beverages quench our thirst and awaken our senses, offering a diverse array of flavors to suit every mood and occasion. 
+                    </p>
+                    <a href="">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Food End -->
+
+
+<!-- About Start -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="/static/img/about.jpg" alt="Image">
+                    <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header">
+                        <p>About Us</p>
+                        <h2>Cooking Since 1990</h2>
+                    </div>
+                    <div class="about-text">
+                        <p style="text-align: justify;">
+                            In the 1990s, food zones predominantly comprised of traditional brick-and-mortar establishments, ranging from family-owned diners to renowned fast-food chains like McDonald's and Burger King. Fine dining restaurants were often the epitome of culinary indulgence, offering elaborate menus and upscale dining experiences. Ethnic eateries, though present, were not as widespread or diverse as they are today, with limited options available in many regions.
+                        </p>
+                        <p style="text-align: justify;">
+                            Food delivery services were primarily limited to local pizzerias and Chinese restaurants, often relying on phone orders and paper menus. Drive-thru lanes were popularized by fast-food giants, providing convenient options for customers on the go. The concept of food trucks and pop-up eateries hadn't yet gained mainstream popularity, remaining niche offerings in select urban areas.
+                        </p>
+                        <a class="btn custom-btn" href="">Book A Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Video Modal Start-->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>        
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Video Modal End -->
+{% endblock %}
